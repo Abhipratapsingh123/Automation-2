@@ -1,8 +1,9 @@
-entrypoint = "Segment-5/Pdf_through_python.py"
+entrypoint = "Segment-5/Acer_laptop_price_notifier.py"
 modules = ["python-3.10"]
 
 [nix]
 channel = "stable-23_05"
+
 
 [unitTest]
 language = "python3"
@@ -11,5 +12,5 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3", "Segment-5/Pdf_through_python.py"]
+run = ["python3","Segment5/Acer_laptop_price_notifier.py"]
 deploymentTarget = "cloudrun"
