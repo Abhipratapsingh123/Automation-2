@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>By Flask</title>
+</head>
+<body>
+  <div>
+    <h1>Volume Calculator</h1>
+    <p>Enter three dimensions to get the volume</p>
+    <form method="POST">
+      <div>
+        <label for="first_dim">Dimension 1:</label>
+        <input value="{{ dim_1 }}" type="text" name="first_dim" id="first_dim" required>
+      </div>
+      <div>
+        <label for="second_dim">Dimension 2:</label>
+        <input value="{{ dim_2 }}" type="text" name="second_dim" id="second_dim" required>
+      </div>
+      <div>
+        <label for="third_dim">Dimension 3:</label>
+        <input value="{{ dim_3 }}" type="text" name="third_dim" id="third_dim" required>
+      </div>
+      <p>Volume: {{ output }}</p>
+      <button type="submit">Calculate</button>
+    </form>
+  </div>
+</body>
+</html>

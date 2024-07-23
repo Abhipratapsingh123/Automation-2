@@ -1,4 +1,4 @@
-entrypoint = "Segment-5/Acer_laptop_price_notifier.py"
+entrypoint = "Segment-7/Flask_web_app.py"
 modules = ["python-3.10"]
 
 [nix]
@@ -12,5 +12,13 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3","Segment5/Acer_laptop_price_notifier.py"]
+run = ["python3","Segment7/Flask_web_app.py"]
 deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 8501
+externalPort = 3000
