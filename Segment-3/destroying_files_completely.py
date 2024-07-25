@@ -1,4 +1,3 @@
-from os import write
 from pathlib import Path
 
 root_dir = Path('Segment-3')

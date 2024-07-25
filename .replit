@@ -1,4 +1,4 @@
-entrypoint = "Segment-7/GUI.py"
+entrypoint = "Segment-2/Grammar_correction_API.py"
 modules = ["python-3.10"]
 
 [nix]
@@ -12,7 +12,7 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3","Segment7/GUI.py"]
+run = ["python3","Segment2/Grammar_correction_API.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
