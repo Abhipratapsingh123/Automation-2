@@ -1,4 +1,4 @@
-entrypoint = "Segment-8/Adding_watermark.py"
+entrypoint = "Segment-9/Detecting_face_invideo.py"
 modules = ["python-3.10"]
 
 [nix]
@@ -12,7 +12,7 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3","Segment8/Adding_watermark.py"]
+run = ["python3","Segment-9/Detecting_face_invideo.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
