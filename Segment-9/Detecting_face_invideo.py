@@ -12,7 +12,7 @@ else:
     height = frame.shape[0]
     width = frame.shape[1]
 
-    # Load the Haar cascade for face detection
+    # Load the cascade for face detection
     face_cascade = cv2.CascadeClassifier('Segment-8/faces.xml')
 
     # Initialize the VideoWriter to save the output video

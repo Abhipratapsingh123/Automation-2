@@ -48,7 +48,7 @@ def send_email(price):
 def main():
     driver = get_driver()
     time.sleep(2)
-    element=driver.find_element(by="xpath",value='//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]')
+    element=driver.find_element(by="xpath",value='//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[3]/div[1]/div/div[1]')
     text = element.text
     cleaned_text = clean_text(text)
     # text = str(clean_text(element.text))
